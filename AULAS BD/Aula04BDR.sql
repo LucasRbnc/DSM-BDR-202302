@@ -1,5 +1,5 @@
-drop database if exists bd_aula03;
-create database bd_aula03;
+drop database if exists bd_aula04;
+create database bd_aula04;
 
 CREATE DOMAIN chk_categoria text CHECK (VALUE='DRAMA' OR VALUE='COMEDIA');
 CREATE DOMAIN chk_status text CHECK (VALUE='DISPONIVEL' OR VALUE='ALUGADO');

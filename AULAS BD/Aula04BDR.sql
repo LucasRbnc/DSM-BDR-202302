@@ -53,4 +53,9 @@ VALUES
     (3, 3, 1),
     (4, 4, 5),
     (5, 5, 3);
+CREATE table tbl_cliente2 (
+  codigo integer
+);
+insert into tbl_cliente2 select codigo_cliente from tbl_cliente;
 UPDATE tbl_livros set status = 'ALUGADO' where status = 'DISPONIVEL';
+DELETE FROM tbl_cliente2 where codigo > 3;

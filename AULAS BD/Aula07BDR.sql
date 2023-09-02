@@ -17,7 +17,8 @@ INSERT INTO tbl_estoque(cod_fornecedor, cod_peca, quantidade) values
 (1,1,30),(2,1,30),(3,2,10),(3,3,50);
 
 --Listar o nome dos fornecedores(maiusculo) e das peças(minusculo) que se situam na mesma cidade, ordenado pelo nome
-
+select upper(a.nome),lower(c.nome)from tbl_fornecedor a INNER JOIN tbl_estoque b ON a.cod_fornecedor = b.cod_fornecedor
+INNER JOIN tbl_peca c ON a.cidade = c.cidade ORDER BY a.nome;
 --listar as cidades onde existem fornecedores (sem valores duplicados)
 
 --Listar o nome e a cor das peças do fornecedor com código 3, ordenado pelo nome da peça
